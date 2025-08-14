@@ -115,7 +115,7 @@ function App() {
         <img
           src="/lnsLogo.png"
           alt="LNS Logo"
-          className="h-22 w-auto hover:scale-105 transition-transform duration-300 drop-shadow-lg"
+          className="h-21 w-auto hover:scale-105 transition-transform duration-300 drop-shadow-lg"
         />
       </div>
 
