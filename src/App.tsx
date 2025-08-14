@@ -37,7 +37,7 @@ function App() {
         if (audioRef.current) {
           audioRef.current.play().catch(console.error);
         }
-      }, 7000);
+      }, 6000);
     } else {
       // Clear all timeouts
       if (timeoutRef.current) {
@@ -75,7 +75,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-200 via-white to-green-200 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-orange-300 via-white to-green-300 relative overflow-hidden pt-10">
       {/* Decorative Background Elements */}
       <div className="absolute inset-0">
         {/* Saffron gradient overlay */}
@@ -107,9 +107,9 @@ function App() {
       {/* Anthem Notice */}
       {/* Eksaq Logo */}
       <div className="fixed top-8 left-8 z-50">
-        <img 
-          src="/eksaqLogo.png" 
-          alt="Eksaq Logo" 
+        <img
+          src="/eksaqLogo.png"
+          alt="Eksaq Logo"
           className="h-16 w-auto hover:scale-105 transition-transform duration-300 drop-shadow-lg"
         />
       </div>
@@ -143,7 +143,6 @@ function App() {
         {/* Main Heading */}
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
           <span className="gradient-text">79th Independence Day</span>{' '}
-          <span>🇮🇳</span>
         </h1>
 
         <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-2xl">
@@ -153,11 +152,11 @@ function App() {
         <button
           onClick={handleHoistFlag}
           className={`px-12 py-5 rounded-full font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl ${isHoisted
-              ? 'bg-gradient-to-r from-red-500 to-red-600 text-white hover:from-red-600 hover:to-red-700 border-2 border-red-400'
-              : 'bg-gradient-to-r from-orange-500 via-white to-green-500 text-gray-800 hover:shadow-xl border-2 border-orange-400'
+            ? 'bg-gradient-to-r from-red-500 to-red-600 text-white hover:from-red-600 hover:to-red-700 border-2 border-red-400'
+            : 'bg-gradient-to-r from-orange-500 via-white to-green-500 text-gray-800 hover:shadow-xl border-2 border-orange-400'
             }`}
         >
-          {isHoisted ? 'Lower the Flag' : 'Hoist the Flag 🇮🇳'}
+          {isHoisted ? 'Lower the Flag' : 'Hoist the Flag'}
         </button>
 
         {/* Patriotic Quote */}
