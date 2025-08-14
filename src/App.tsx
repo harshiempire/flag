@@ -115,7 +115,7 @@ function App() {
         <img
           src="/lnsLogo.png"
           alt="LNS Logo"
-          className="h-16 w-auto hover:scale-105 transition-transform duration-300 drop-shadow-lg"
+          className="h-25 w-auto hover:scale-105 transition-transform duration-300 drop-shadow-lg"
         />
       </div>
 
@@ -178,4 +178,3 @@ function App() {
 }
 
 export default App;
-
